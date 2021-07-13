@@ -1,7 +1,7 @@
 # original定義書
 ## 一覧
 
-|和名|属性|型|PrimaryKey|NotNull|ForeignKey|
+|和名|属性|型|PrimK|NNull|ForeK|
 |:---|:---|:---|:---|:---:|:----:|
 |書籍ID|book_id|int(11)|○|○|-|
 |書籍名|book_name|varchar(50)|-|○|-|
