@@ -1,12 +1,13 @@
-【DDL文】 
-//購入テーブル 
-CREATE TABLE IF NOT EXISTS `d_purchase` ( 
-  `order_id` bigint(20) NOT NULL AUTO_INCREMENT, 
-  `customer_code` varchar(50) NOT NULL, 
-  `purchase_date` date NOT NULL, 
-  `total_price` int(11) NOT NULL, 
-  PRIMARY KEY (`order_id`) 
-) 
+
+# 購入テーブル 
+
+## d_purchase
+|属性名|型|PK|FK|NN|
+|:------|:-----|:--|:--|:--|
+|order_id|bigint(20)|○||○|
+|customer_code|varchar(50)|||○|
+|purchase_date|date|||○|
+|total_price|int(11)|||○|
  
 //購入テーブル詳細 
 CREATE TABLE IF NOT EXISTS `d_purchase_detail` ( 
