@@ -1,6 +1,6 @@
 
 # 購入テーブル 
-**d_purchase
+**d_purchase**
 |属性名|型|PK|FK|NN|
 |:------|:-----|:--|:--|:--|
 |order_id|bigint(20)|○||○|
@@ -9,7 +9,7 @@
 |total_price|int(11)|||○|
  
 # 購入テーブル詳細
-**d_purchase_detail
+**d_purchase_detail**
 |属性名|型|PK|FK|NN|
 |:------|:-----|:--|:--|:--|
 |detail_id|bigint(20)|○||○|
