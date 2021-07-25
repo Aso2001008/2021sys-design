@@ -19,18 +19,20 @@
 |num|int(11)|||○|
 
 
-## ユーザー（顧客）テーブル 
-CREATE TABLE IF NOT EXISTS `m_customers` ( 
-  `customer_code` varchar(50) NOT NULL DEFAULT '', 
-  `pass` varchar(50) NOT NULL, 
-  `name` varchar(20) NOT NULL, 
-  `address` varchar(100) NOT NULL, 
-  `tel` varchar(20) NOT NULL, 
-  `mail` varchar(100) NOT NULL, 
-  `del_flag` int(1) DEFAULT NULL, 
-  `reg_date` date NOT NULL, 
-  PRIMARY KEY (`customer_code`) 
-) 
+# ユーザー（顧客）テーブル
+**m_customers**
+|属性名|型|PK|FK|NN|
+|:------|:-----|:--|:--|:--|
+|customer_code|varchar(50)|○||○|
+|pass|varchar(50)|||○|
+|name|varchar(20)|||○|
+|address|varchar(100)|||○|
+|tel|varchar(20)|||○| 
+|mail|varchar(100)|||○|
+|del_flag|int(1)|||○|
+|eg_date|date|||○|
+
+
 //カテゴリテーブル 
 CREATE TABLE IF NOT EXISTS `m_category` ( 
   `category_id` int(11) NOT NULL AUTO_INCREMENT, 
