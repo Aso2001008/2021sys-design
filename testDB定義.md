@@ -38,16 +38,15 @@
 |name|varchar(20)|||○|
 |reg_date|date|||○|
 
-//商品テーブル 
-CREATE TABLE IF NOT EXISTS `m_items` ( 
-  `item_code` int(11) NOT NULL DEFAULT '0', 
-  `item_name` varchar(50) NOT NULL, 
-  `price` int(11) NOT NULL, 
-  `category_id` int(11) NOT NULL, 
-  `image` varchar(200) NOT NULL, 
-  `detail` varchar(500) DEFAULT NULL, 
-  `del_flag` int(11) DEFAULT NULL, 
-  `reg_date` date NOT NULL, 
-  PRIMARY KEY (`item_code`), 
-  FOREIGN KEY PK_category(category_id) REFERENCES m_category(category_id) 
-) 
+# 商品テーブル
+**m_items**
+|属性名|型|PK|FK|NN|
+|:------|:-----|:--|:--|:--|
+|item_code|int(11)|○||○| 
+|item_name|varchar(50)|||○| 
+|price|int(11)|||○| 
+|category_id|int(11)||○|○| 
+|image|varchar(200)|||○| 
+|detail|varchar(500)|||○| 
+|del_flag|int(11)|||○| 
+|reg_date|date|||○|
