@@ -1,7 +1,6 @@
 
 # 購入テーブル 
-
-## d_purchase
+**d_purchase
 |属性名|型|PK|FK|NN|
 |:------|:-----|:--|:--|:--|
 |order_id|bigint(20)|○||○|
@@ -9,16 +8,17 @@
 |purchase_date|date|||○|
 |total_price|int(11)|||○|
  
-//購入テーブル詳細 
-CREATE TABLE IF NOT EXISTS `d_purchase_detail` ( 
-  `detail_id` bigint(20) NOT NULL AUTO_INCREMENT, 
-  `order_id` bigint(20) NOT NULL DEFAULT '0', 
-  `item_code` int(11) NOT NULL, 
-  `price` int(11) NOT NULL, 
-  `num` int(11) NOT NULL, 
-  PRIMARY KEY (`detail_id`,`order_id`) 
-) 
- 
+# 購入テーブル詳細
+**d_purchase_detail
+|属性名|型|PK|FK|NN|
+|:------|:-----|:--|:--|:--|
+|detail_id|bigint(20)|○||○|
+|order_id|bigint(20)|○|○|○|
+|item_code|int(11)|||○|
+|price|int(11)|||○|
+|num|int(11)|||○|
+
+
 //ユーザー（顧客）テーブル 
 CREATE TABLE IF NOT EXISTS `m_customers` ( 
   `customer_code` varchar(50) NOT NULL DEFAULT '', 
