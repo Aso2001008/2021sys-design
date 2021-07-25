@@ -1,4 +1,3 @@
-
 # 購入テーブル 
 **d_purchase**
 |属性名|型|PK|FK|NN|
@@ -18,7 +17,6 @@
 |price|int(11)|||○|
 |num|int(11)|||○|
 
-
 # ユーザー（顧客）テーブル
 **m_customers**
 |属性名|型|PK|FK|NN|
@@ -32,14 +30,14 @@
 |del_flag|int(1)|||○|
 |eg_date|date|||○|
 
+# カテゴリテーブル
+**m_category**
+|属性名|型|PK|FK|NN|
+|:------|:-----|:--|:--|:--|
+|category_id|int(11)|○||○|
+|name|varchar(20)|||○|
+|reg_date|date|||○|
 
-//カテゴリテーブル 
-CREATE TABLE IF NOT EXISTS `m_category` ( 
-  `category_id` int(11) NOT NULL AUTO_INCREMENT, 
-  `name` varchar(20) NOT NULL, 
-  `reg_date` date NOT NULL, 
-  PRIMARY KEY (`category_id`) 
-) 
 //商品テーブル 
 CREATE TABLE IF NOT EXISTS `m_items` ( 
   `item_code` int(11) NOT NULL DEFAULT '0', 
