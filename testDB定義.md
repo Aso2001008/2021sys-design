@@ -19,7 +19,7 @@
 |num|int(11)|||○|
 
 
-//ユーザー（顧客）テーブル 
+## ユーザー（顧客）テーブル 
 CREATE TABLE IF NOT EXISTS `m_customers` ( 
   `customer_code` varchar(50) NOT NULL DEFAULT '', 
   `pass` varchar(50) NOT NULL, 
